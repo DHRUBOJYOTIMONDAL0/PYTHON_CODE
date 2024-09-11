@@ -1,0 +1,81 @@
+extends BaseCourse.pug 
+
+block content
+  // Hero Part
+  nav(aria-label='breadcrumb')
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href='/')
+          span.color-front(style='margin-left:10px')
+            strong Home
+      li.breadcrumb-item
+        a(href='Course')
+          span.color-front(style='margin-left:10px')
+            strong Course
+      li.breadcrumb-item
+        a(href='Civil')
+          span.color-front(style='margin-left:10px')
+            strong Civil Engineering
+  // Page Title Part
+  .page_name
+    h2 CIVIL ENGINEERING
+    img(src='../static/ALL IMAGE/APPLY section/line.png')
+  // Slider Part
+  #carouselExampleCaptions.carousel.slide.carousel-fade(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleCaptions' data-slide-to='0')
+      li(data-target='#carouselExampleCaptions' data-slide-to='1')
+      li(data-target='#carouselExampleCaptions' data-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='../static/ALL IMAGE/CIVIL img/Civil-engineers1.jpg' height='550px' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h2 OUR COURSES
+          p Building a better world, one course at a time
+      .carousel-item
+        img.d-block.w-100(src='/../static/ALL IMAGE/CIVIL img/Civil-engineers2.jpg' height='550px' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h2 OUR COURSES
+          p Building a better world, one course at a time
+      .carousel-item
+        img.d-block.w-100(src='/../static/ALL IMAGE/CIVIL img/Civil-engineers3.jpg' height='550px' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h2 OUR COURSES
+          p Building a better world, one course at a time
+    a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next  
+  // Our Faculties member
+  br
+  br
+  .table-responsive
+    strong
+      table.table.table-bordered
+        tr.table_header
+          td(style='width:10%;') Serial No
+          td(style='width:40%;') Name of Faculty
+          td(style='width:15%;') Designation
+          td(style='width:15%;') Qualification
+        tr.table_data
+          td 1
+          td SATYAKI BHATTACHARYYA
+          td H.O.D
+          td B.TECH
+        tr.table_data
+          td 2
+          td SANCHARI BHATTACHARJEE
+          td LECTURER
+          td B.TECH
+        tr.table_data
+          td 3
+          td KUSAL PAL
+          td LECTURER
+          td B.TECH
+        tr.table_data
+          td 4
+          td JYOTI PROKASH CHOWDHURYL
+          td LECTURER
+          td B.TECH

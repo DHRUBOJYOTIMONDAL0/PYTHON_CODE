@@ -1,0 +1,109 @@
+extends Base.pug
+
+block content
+  // Hero Part
+  nav(aria-label='breadcrumb')
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href='/')
+          span.color-front(style='margin-left:10px')
+            strong Home
+      li.breadcrumb-item
+        a(href='About_us')
+          span.color-front(style='margin-left:10px')
+            strong About Us
+  // Page Title Part
+  .page_name
+    h2 ABOUT US
+    img(src='../static/ALL IMAGE/APPLY section/line.png')
+  .bg-white.py-5(style='margin-top: -25px;')
+    .container.py-5
+      .row.align-items-center.mb-5
+        .col-lg-6.order-2.order-lg-1
+          i.fa.fa-bar-chart.fa-2x.mb-3.text-primary
+          h2.font-weight-light(style='color: red;')
+            strong Mission and Vision
+          p.font-italic.text-muted.mb-4.color-front
+            strong
+              | 1. Very high faculty-student ratio
+              | conforming to the council norms 
+              br
+              br
+              |                             2. A modern and liberal student friendly environment 
+              br
+              br
+              |                             3. Highest degree of professionalism blended with human insight 
+              br
+              br
+              |                             4. Development of attitude and personality 
+              br
+              br
+              |                             5. To make industry ready technical professionals
+        .col-lg-5.mx-auto.order-1.order-lg-2
+          img.img-fluid.mb-4.mb-lg-0(src='../static/ALL IMAGE/SERVICE icon/admission.jpg' alt='')
+      .row.align-items-center
+        .col-lg-5.px-5.mx-auto
+          img.img-fluid.mb-4.mb-lg-0(src='../static/ALL IMAGE/SERVICE icon/vission.png' alt='')
+        .col-lg-6
+          i.fa.fa-leaf.fa-2x.mb-3.text-primary
+          h2.font-weight-light(style='color: red;')
+            strong Mission and Vision
+          p.font-italic.text-muted.mb-4.color-front
+            strong
+              | 1. Top priority on communicative English 
+              br
+              br
+              |                             2. Group discussion, debates and interactive sessions to develop interpersonal skills,
+              |                             communication and leadership qualities 
+              br
+              br
+              |                             3. A regular system of appraisal to monitor students performance and measure effectiveness
+              |                             of teaching 
+              br
+              br
+              |                             4. To maintain all round discipline and to keep of ragging from the campus 
+              br
+              br
+              |                             5. Adequate assistance in placement opportunity
+  .bg-light.py-5
+    .container.py-5
+      .row.mb-4
+        .col-lg-5
+          h3 Our Developer Team
+          p.font-italic.text-muted
+            | Our developers are experienced in creating business-critical,
+            | enterprise-wide, client-server applications that manage clients business processes
+      .row.text-center
+        // Team item
+        .col-xl-3.col-sm-6.mb-5
+          .bg-white.rounded.shadow-sm.py-5.px-4
+            img.img-fluid.rounded-circle.mb-3.img-thumbnail.shadow-sm(src='../static/ALL IMAGE/SERVICE icon/avatar-2.png' alt='' width='100')
+            h5.mb-0 Suman Dey
+            span.small.text-uppercase.text-muted
+              | Frontend
+              | Developer
+        // Team item
+        .col-xl-3.col-sm-6.mb-5
+          .bg-white.rounded.shadow-sm.py-5.px-4
+            img.img-fluid.rounded-circle.mb-3.img-thumbnail.shadow-sm(src='../static/ALL IMAGE/SERVICE icon/avatar-3.png' alt='' width='100')
+            h5.mb-0 Ankur Dhol
+            span.small.text-uppercase.text-muted
+              | Frontend
+              | Developer
+        // Team item
+        .col-xl-3.col-sm-6.mb-5
+          .bg-white.rounded.shadow-sm.py-5.px-4
+            img.img-fluid.rounded-circle.mb-3.img-thumbnail.shadow-sm(src='../static/ALL IMAGE/SERVICE icon/avatar-2.png' alt='' width='100')
+            h5.mb-0 Sayan Banerjee
+            span.small.text-uppercase.text-muted
+              | Backend
+              | Developer
+        // Team item
+        .col-xl-3.col-sm-6.mb-5
+          .bg-white.rounded.shadow-sm.py-5.px-4
+            img.img-fluid.rounded-circle.mb-3.img-thumbnail.shadow-sm(src='../static/ALL IMAGE/SERVICE icon/avatar-1.png' alt='' width='100')
+            h5.mb-0 Dhrubojyoti Mondal
+            span.small.text-uppercase.text-muted
+              | Backend
+              | Developer
+  

@@ -1,0 +1,68 @@
+extends Base.pug
+block content 
+  // Hero Part
+  nav(aria-label='breadcrumb')
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href='/')
+          span.color-front(style='margin-left:10px')
+            strong Home
+      li.breadcrumb-item
+        a(href='Admission')
+          span.color-front(style='margin-left:10px')
+            strong Admission
+  section.h-100.color-front(style='background-color: rgb(255, 255, 255); margin-top: -16px;')
+    .container.py-5.h-100
+      .row.d-flex.justify-content-center.align-items-center.h-100
+        .col
+          .card.card-registration.my-4.faqcard
+            .row.g-0
+              .col-xl-6.d-none.d-xl-block
+                img.img-fluid(src='../static/ALL IMAGE/APPLY section/Admission.jpg' alt='Sample photo' style='border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;')
+              .col-xl-6
+                .card-body.p-md-5.text-black
+                  h4.mb-5.text-uppercase Student admission form
+                  .row
+                    .col-md-6.mb-4
+                      .form-outline
+                        input#form3Example1m.form-control.form-control-lg(type='text')
+                        label.form-label(for='form3Example1m') First name
+                    .col-md-6.mb-4
+                      .form-outline
+                        input#form3Example1n.form-control.form-control-lg(type='text')
+                        label.form-label(for='form3Example1n') Last name
+                  .row
+                    .col-md-6.mb-4
+                      .form-outline
+                        input#form3Example1m1.form-control.form-control-lg(type='text')
+                        label.form-label(for='form3Example1m1') Mother's name
+                    .col-md-6.mb-4
+                      .form-outline
+                        input#form3Example1n1.form-control.form-control-lg(type='text')
+                        label.form-label(for='form3Example1n1') Father's name
+                  .form-outline.mb-4
+                    input#form3Example8.form-control.form-control-lg(type='text')
+                    label.form-label(for='form3Example8') Address
+                  .d-md-flex.justify-content-start.align-items-center.mb-4.py-2
+                    h6.mb-0.me-4 Gender :
+                    .form-check.form-check-inline.mb-0.me-4
+                      input#femaleGender.form-check-input(type='radio' name='inlineRadioOptions' value='option1')
+                      label.form-check-label(for='femaleGender')  Female
+                    .form-check.form-check-inline.mb-0.me-4
+                      input#maleGender.form-check-input(type='radio' name='inlineRadioOptions' value='option2')
+                      label.form-check-label(for='maleGender') Male
+                    .form-check.form-check-inline.mb-0
+                      input#otherGender.form-check-input(type='radio' name='inlineRadioOptions' value='option3')
+                      label.form-check-label(for='otherGender') Other
+                  .form-outline.mb-4
+                    input#form3Example90.form-control.form-control-lg(type='text')
+                    label.form-label(for='form3Example90') Pincode
+                  .form-outline.mb-4
+                    input#form3Example99.form-control.form-control-lg(type='text')
+                    label.form-label(for='form3Example99') Mobile Number
+                  .form-outline.mb-4
+                    input#form3Example97.form-control.form-control-lg(type='text')
+                    label.form-label(for='form3Example97') Email ID
+                  .d-flex.justify-content-end.pt-3
+                    button.btn.btn-warning.btn-lg.ms-2(type='button') Submit form
+  

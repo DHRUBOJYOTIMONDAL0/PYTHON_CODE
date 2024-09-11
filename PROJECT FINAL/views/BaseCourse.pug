@@ -1,0 +1,313 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='Welcome to iCoder. A blog for coding enthusiasts')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+  // Google Fonts
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' rel='stylesheet')
+  // Template Main CSS File
+  link(href='../static/style.css' rel='stylesheet')
+  style(type='text/css').
+    .navbar-nav>li>.dropdown-menu a:link,
+    .navbar-nav>li>.dropdown-menu a:hover {
+    background-color: #350cea;
+    }
+  title Berhampore Polytechnic College
+body   
+  // Navbar Part
+  nav.navbar.navbar-expand-lg.navbar.navbar.navbar.navbar-light(style='background-color: #350cea;')
+    span.navbar-text-white
+      a.navbar-brand(href='#')
+        span.text-white
+          | Berhampore Polytechnic College
+          br
+          .heading
+            | 3/20 GIRJAPARA LANE
+            br
+            | POST:KHAGRA, Berhampore, West Bengal 742103
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='/')
+            span.text-white(style='margin-left:250px;') HOME
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle.text-white(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            span.text-white COURSE
+          .dropdown-menu(style='background-color: #350cea;' aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='ComputerScienceTechnology')
+              span.text-white(style='margin-right:10px')
+                | Computer
+                | Science &
+                | Technolog
+            a.dropdown-item(href='Electronics')
+              span.text-white(style='margin-right:10px')
+                | Elctronics &
+                | Telecommunication
+            a.dropdown-item(href='Electrical')
+              span.text-white(style='margin-right:10px')
+                | Electrical
+                | Engineering
+            a.dropdown-item(href='Mechanical')
+              span.text-white(style='margin-right:10px')
+                | Mechanical
+                | Engineering
+            a.dropdown-item(href='Civil')
+              span.text-white(style='margin-right:10px')
+                | Civil
+                | Engineering
+        li.nav-item
+          a.nav-link(href='Gallery')
+            span.text-white GALLERY
+        li.nav-item
+          a.nav-link(href='Admission')
+            span.text-white ADMISSION
+        li.nav-item
+          a.nav-link(href='About_us')
+            span.text-white ABOUT US
+        li.nav-item
+          a.nav-link(href='Contact_us')
+            span.text-white CONTACT US
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle.text-white(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            span.text-white Login
+          .dropdown-menu(style='background-color: #350cea;' aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='#' data-toggle='modal' data-target='#studentloginModal')
+              span.text-white(style='margin-right:10px') Students Login
+            a.dropdown-item(href='#' data-toggle='modal' data-target='#teacherloginModal')
+              span.text-white(style='margin-right:10px') Teachers Login
+  // Students Login Modal
+  #studentloginModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='studentloginModalLabel' aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.section-front.modal-title Student Log-in
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') 
+        .modal-body
+          form
+            .color-front.form-group
+              label(for='exampleInputEmail1') Registration NO.
+              input#exampleInputEmail1.form-control(type='email' placeholder='Enter Your Registration no.' aria-describedby='emailHelp')
+              small#emailHelp.form-text.text-muted
+                | We will never share your personal details 
+            .color-front.form-group
+              label(for='exampleInputPassword1') Password
+              input#exampleInputPassword1.form-control(type='password' placeholder='Enter DOB')
+            button.get-btn-runded.btn.btn-primary(type='submit') 
+              a(href='StudentLogin' target="_blank") Login
+  // Teachers Login Modal
+  #teacherloginModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='teacherloginModalLabel' aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.section-front.modal-title Login to Teachers Pannel
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') 
+        .modal-body
+          form
+            .color-front.form-group
+              label(for='exampleInputEmail1') Email address
+              input#exampleInputEmail1.form-control(type='email' placeholder='Enter Your Email' aria-describedby='emailHelp')
+              small#emailHelp.form-text.text-muted
+                | We will never share your email with anyone
+                | else.
+            .color-front.form-group
+              label(for='exampleInputPassword1') Password
+              input#exampleInputPassword1.form-control(type='password')
+            button.get-btn-runded.btn.btn-primary(type='submit') Login
+  // Highlight Part
+  div
+    .notice-bar
+      .notice-scroll
+        h5 Highlights
+        div
+          marquee(style='margin-top: 13px;')
+            p(style='color: rgb(255, 255, 255);')
+              | ADMISSION NOTICE in Engineering & Technology, ADMISSION NOTICE in DIPLOMA ENGINEERING
+              | COURSES,Fee Submission Odd Sem-2022, DIPLOMA Admission Notice Session 2022-2025, Fee Payment
+              | Notice Even Semester 2022, NOTICE TO ALL HOSTEL BOARDERS
+  block content
+  .important
+    p
+      | * The credit points assigned for extracurricular and or co-curricular activities shall be given by bpc;the
+      | colleges and the same shall be submitted to the University. The criteria to acquire this credit point shall
+      | be defined by the colleges from time to time.
+      br
+      br
+      |             * This (Extracurricular/ Co curricular activities) credit point will be awarded to the student who will
+      |             qualify the MAR(Mandatory Additional Requirement).
+      br
+    p
+      strong NOTES : --------------
+      br
+      br
+      strong 1. Academic (Program) Committee
+      |  The Diploma program shall have an Academic (Program)
+      |             Committee constituted by the Head of the institution.
+    p
+      strong 2. Project work
+      |  All the students shall undertake a project under the supervision of a
+      |             teacher and submit a report. The area of the project shall be decided by the supervisor in consultation with
+      |             the student. The project may be carried out in group not exceeding 3 in number. The internal and external
+      |             examiner appointed by the University shall evaluate the project at the time of the Practical examinations of
+      |             other semester(s).
+    p
+      strong 3.
+      strong Industrial training (Desirable)
+      |  Every candidate shall be required to
+      |             work for at least 150 hours spread over four weeks in a Industry.After the Semester &ndash; VI and before
+      |             the commencement of Semester &ndash; III, and shall submit satisfactory report of such work and certificate
+      |             duly signed by the authority of training organization to the head of the institute.
+    p
+      strong 4.
+      strong Practice School 
+      | In the V semester, every candidate shall undergo
+      |             practice school for a period of 150 hours evenly
+      br
+      |             distributed throughout the semester. The student shall opt any one of the domains for practice school
+      |             declared by the academic (program) committee from time to time.
+      br
+      |             At the end of the practice school, every student shall submit a printed report (in triplicate) on the
+      |             practice school he/she attended (not more than 25 pages). Along with the exams of semester VII, the report
+      |             submitted by the student. The knowledge and skills acquired by the student through practice school
+      |             shall
+      br
+      |             be evaluated by the subject experts at college level and grade point shall be awarded.
+  // FAQ Part
+  .container(style='margin-top: 60px;')
+    h1.down-head(style='color: #000000')
+      strong Frequently Asked Questions
+    #accordionExample.accordion
+      .card.my-1.faqcard
+        #faq-1.card-header.collapsed.dropdown-toggle(data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+          strong Can I Join as a Computer Engineer After 10th?
+        #collapseOne.collapse(aria-labelledby='faq-1' data-parent='#accordionExample' style='')
+          .card-body
+            | Yes, you can do Computer Engineering after 10th&mldr;. You have to give a JEXPO exam and according to
+            | ur rank you
+            | will
+            | get admission in engineering college.
+      .card.my-1.faqcard
+        #faq-2.card-header.collapsed.dropdown-toggle(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+          strong How Many Years does it take to Complete a Polytechnic Course after 10th?
+        #collapseTwo.collapse(aria-labelledby='faq-2' data-parent='#accordionExample' style='')
+          .card-body
+            | Polytechnic is a 3-year course which has an extensive and rigorous teaching plus training
+            | process.
+            | Students after completing their polytechnic courses would have the privilege to take admissions
+            | via
+            | lateral entry i.e directly to the second year of the engineering program.
+      .card.my-1.faqcard
+        #faq-3.card-header.dropdown-toggle(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+          strong B.tech is necessary after diploma?
+        #collapseThree.collapse(aria-labelledby='faq-3' data-parent='#accordionExample')
+          .card-body
+            | Yes its necessary because the Average diploma Engineer salary is too low. If you will pass
+            | b.tech then the salary will increase very high &amp; you get much better opportunities.
+      .card.my-1.faqcard
+        #faq-4.card-header.dropdown-toggle(data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+          strong How much can I earn after completing this course ?
+        #collapseFour.collapse(aria-labelledby='faq-4' data-parent='#accordionExample')
+          .card-body
+            | It depends on the company and for the post you are working on. Average salary lies between 2-3
+            | LPA.
+      .card.my-1.faqcard
+        #faq-5.card-header.dropdown-toggle(data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+          strong What Jobs can I get after diploma?
+        #collapseFive.collapse(aria-labelledby='faq-5' data-parent='#accordionExample')
+          .card-body
+            | Today, diploma holders are employed as Junior Engineers, Assistant Engineers, executives in
+            | hotels,
+            | BPO sector and many public and private organizations. The Central and State Government of India
+            | provides a large number of opportunities to diploma holders.
+
+  // Footer Part
+  footer#footer
+    .footer-top
+      .container
+        .row
+          .col-lg-3.col-md-6.footer-contact
+            .about-widget
+              img(src='image/footer.png' alt='')
+          .col-lg-3.col-md-6.footer-contact
+            h3 Contact
+            p
+              | 3/20 Girija Para Lane, Khagra,
+              br
+              | Berhampore
+              br
+              strong Phone :
+              |  Coming Soon
+              br
+              strong Email :
+              |  Coming Soon
+              br
+          .col-lg-2.col-md-6.footer-links
+            h4 Useful Links
+            ul
+              li
+                i.bx.bx-chevron-right
+                a(href='/') HOME
+              li
+                i.bx.bx-chevron-right
+                a(href='Course') COURSE
+              li
+                i.bx.bx-chevron-right
+                a(href='Gallery') GALLERY
+              li
+                i.bx.bx-chevron-right
+                a(href='About_us') ABOUT US
+              li
+                i.bx.bx-chevron-right
+                a(href='Contact_us') CONTACT US
+          .col-lg-3.col-md-6.footer-links
+            h4 Our Course
+            ul
+              li
+                i.bx.bx-chevron-right
+                a(href='ComputerScienceTechnology')
+                  | Computer
+                  | Science &
+                  | Technolog
+              li
+                i.bx.bx-chevron-right
+                a(href='Electronics')
+                  | Elctronics &
+                  | Telecommunication
+              li
+                i.bx.bx-chevron-right
+                a(href='Electrical')
+                  | Electrical
+                  | Engineering
+              li
+                i.bx.bx-chevron-right
+                a(href='Mechanical')
+                  | Mechanical
+                  | Engineering
+              li
+                i.bx.bx-chevron-right
+                a(href='Civil')
+                  | Civil
+                  | Engineering
+      .container
+        .me-md-auto.text-center.text-md-start
+          .copyright
+            | Copyright 
+            strong
+              span 
+            | . All Rights Reserved
+          .credits
+            | Designed by 
+            a(href='#') CST 4th Sem Students
+  // End Footer
+  // Optional JavaScript
+  // jQuery first, then Popper.js, then Bootstrap JS
+  script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')
+  

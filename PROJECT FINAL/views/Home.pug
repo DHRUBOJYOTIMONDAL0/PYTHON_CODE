@@ -1,0 +1,179 @@
+extends Base.pug
+
+block content 
+  // Slider Part
+  #carouselExampleCaptions.carousel.slide.carousel-fade(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleCaptions' data-slide-to='0')
+      li(data-target='#carouselExampleCaptions' data-slide-to='1')
+      li(data-target='#carouselExampleCaptions' data-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='../static/ALL IMAGE/HOME img/IMG_20220804_140914.jpg' height='550px' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h2 OUR COURSES
+          p Building a better world, one course at a time
+      .carousel-item
+        img.d-block.w-100(src='/../static/ALL IMAGE/HOME img/IMG_20220804_141053.jpg' height='550px' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h2 OUR COURSES
+          p Building a better world, one course at a time
+      .carousel-item
+        img.d-block.w-100(src='/../static/ALL IMAGE/HOME img/IMG_20220804_141201.jpg' height='550px' alt='...')
+        .carousel-caption.d-none.d-md-block
+          h2 OUR COURSES
+          p Building a better world, one course at a time
+    a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+  // Course Part
+  section.courses-section.spad
+    .container
+      .section-title.text-center
+        h3(style='color: #000000')
+          strong(style='font-size: 35px;') OUR POPULAR COURSES
+      .row
+        // course item
+        .col-lg-4.col-md-3.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/CIVIL img/Civil-engineers1.jpg' alt='...' width='290px' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Civil Engineering
+              a.btn.btn-primary.get-btn-master(href='Civil') Tap to View Details
+        // course item
+        .col-lg-4.col-md-6.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/CSE img/cse1.jpg' alt='...' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Computer Science Engineering
+              a.btn.btn-primary.get-btn-master(href='ComputerScienceTechnology') Tap to View Details
+        // course item
+        .col-lg-4.col-md-6.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/MECHANICAL img/first.webp' alt='...' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Mechanical Engineering
+              a.btn.btn-primary.get-btn-master(href='Mechanical') Tap to View Details
+  // Apply Now Part
+  .admission-section(style='background-image:url("../static/All IMAGE/APPLY section/apply-section.jpg"); background-position: left;')
+    .container
+      .row.justify-content-end
+        .col-lg-6
+          h2(style='font-family: Poppins') Apply for Admission
+          h4
+            strong
+              | invites students to apply to its stellar courses in
+              | order to experience world-class education in our
+              | own West Bengal.
+          br
+          p
+            | We do not just offer education but impart knowledge beyond the syllabus structure.
+            | We contribute to the overall development of the students and help them build their career in
+            br
+            | their
+            | chosen path with ease.
+          a.get-btn-master(href='Admisson') Apply Now
+  // Service Part
+  .container.services(style='margin-top: 40px;')
+    .section-title.text-center
+      h3(style='color: #000000')
+        strong  OUR FACILITIES
+      p1(style='font-size: 20px; color: #000000;') We provides the opportunity to prepare for life
+    .row
+      .col-lg-4.col-sm-6.service-item.wow.fadeInLeft(style='visibility: visible;')
+        .service-icon
+          img(src='../static/ALL IMAGE/SERVICE icon/1.png' alt='1')
+        .service-content
+          h4
+            strong Sports, Culture
+          p(style='color :#000000') Nourishing recreational talents in the fields of sports, culture etc
+      .col-lg-4.col-sm-6.service-item.wow.fadeInRight(style='visibility: visible;')
+        .service-icon
+          img(src='../static/ALL IMAGE/SERVICE icon/2.png' alt='1')
+        .service-content
+          h4
+            strong College Hostel
+          p(style='color :#000000') College Hostel (Boys &amp; Girls Available)
+      .col-lg-4.col-sm-6.service-item.wow.fadeInLeft(style='visibility: visible;')
+        .service-icon
+          img(src='../static/ALL IMAGE/SERVICE icon/3.png' alt='1')
+        .service-content
+          h4
+            strong Medical Assistance
+          p(style='color :#000000') 24x7 medical assistance for students.
+      .col-lg-4.col-sm-6.service-item.wow.fadeInRight(style='visibility: visible;')
+        .service-icon
+          img(src='../static/ALL IMAGE/SERVICE icon/4.png' alt='1')
+        .service-content
+          h4
+            strong Placement Assistant
+          p(style='color :#000000') BPC will provide 100% placement assistant
+      .col-lg-4.col-sm-6.service-item.wow.fadeInLeft(style='visibility: visible;')
+        .service-icon
+          img(src='../static/ALL IMAGE/SERVICE icon/5.png' alt='1')
+        .service-content
+          h4
+            strong Industrial Training
+          p(style='color :#000000') Exclusive industrial training for 2nd year and 3rd year students
+      .col-lg-4.col-sm-6.service-item.wow.fadeInRight(style='visibility: visible;')
+        .service-icon
+          img(src='../static/ALL IMAGE/SERVICE icon/6.png' alt='1')
+        .service-content
+          h4
+            strong Drinking Water
+          p(style='color :#000000') Purified cool drinking water plant
+  // FAQ Part
+  .container
+    h1.down-head(style='color: #000000')
+      strong Frequently Asked Questions
+    #accordionExample.accordion
+      .card.my-1.faqcard
+        #faq-1.card-header.collapsed.dropdown-toggle(data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+          strong Can I Join Diploma After 10th?
+        #collapseOne.collapse(aria-labelledby='faq-1' data-parent='#accordionExample' style='')
+          .card-body
+            | Yes, you can do diploma after 10th&mldr;. You have to give a JEXPO exam and according to ur rank you
+            | will
+            | get admission in engineering college.
+      .card.my-1.faqcard
+        #faq-2.card-header.collapsed.dropdown-toggle(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+          strong How Many Years does it take to Complete a Polytechnic Course after 10th?
+        #collapseTwo.collapse(aria-labelledby='faq-2' data-parent='#accordionExample' style='')
+          .card-body
+            | Polytechnic is a 3-year course which has an extensive and rigorous teaching plus training
+            | process.
+            | Students after completing their polytechnic courses would have the privilege to take admissions
+            | via
+            | lateral entry i.e directly to the second year of the engineering program.
+      .card.my-1.faqcard
+        #faq-3.card-header.dropdown-toggle(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+          strong What is the Procedure to do a B.TECH after Diploma?
+        #collapseThree.collapse(aria-labelledby='faq-3' data-parent='#accordionExample')
+          .card-body
+            | B.Tech after diploma is called B.Tech lateral i.e.you get lateral entry in B.Tech which means
+            | you
+            | get admitted in 2nd year of B.Tech.
+      .card.my-1.faqcard
+        #faq-4.card-header.dropdown-toggle(data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+          strong What are the difference between diploma &amp; btech?
+        #collapseFour.collapse(aria-labelledby='faq-4' data-parent='#accordionExample')
+          .card-body
+            | Polytechnic education offers an engineering diploma whereas B.Tech. is a degree course and
+            | offers a
+            | full-fledged engineering degree upon completion of course. Polytechnic is a three-year course
+            | whereas B. Tech is a four-year course.
+      .card.my-1.faqcard
+        #faq-5.card-header.dropdown-toggle(data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+          strong What Jobs can i get after diploma?
+        #collapseFive.collapse(aria-labelledby='faq-5' data-parent='#accordionExample')
+          .card-body
+            | Today, diploma holders are employed as Junior Engineers, Assistant Engineers, executives in
+            | hotels,
+            | BPO sector and many public and private organizations. The Central and State Government of India
+            | provides a large number of opportunities to diploma holders.

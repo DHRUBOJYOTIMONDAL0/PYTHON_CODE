@@ -1,0 +1,72 @@
+extends Base.pug
+block  content
+  // Hero Part
+  nav(aria-label='breadcrumb')
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href='/')
+          span.color-front(style='margin-left:10px')
+            strong Home
+      li.breadcrumb-item
+        a(href='Course')
+          span.color-front(style='margin-left:10px')
+            strong Course
+  // Page Title Part
+  .page_name
+    h2 Course
+    img(src='../static/ALL IMAGE/APPLY section/line.png')
+  // Course Part
+  section.courses-section.spad
+    .container
+      .section-title.text-center
+        h3(style='color: #000000')
+          strong(style='font-size: 35px;') POPULAR COURSES
+      .row
+        // course item
+        .col-lg-4.col-md-3.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/CIVIL img/Civil-engineers1.jpg' alt='...' width='290px' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Civil Engineering
+              a.btn.btn-primary.get-btn-master(href='Civil') Tap to View Details
+        // course item
+        .col-lg-4.col-md-6.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/CSE img/cse6.jpg' alt='...' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Computer Science Engineering
+              a.btn.btn-primary.get-btn-master(href='ComputerScienceTechnology') Tap to View Details
+        // course item
+        .col-lg-4.col-md-6.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/MECHANICAL img/firstIND.jpg' alt='...' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Mechanical Engineering
+              a.btn.btn-primary.get-btn-master(href='Mechanical') Tap to View Details
+        // course item
+        .col-lg-4.col-md-6.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/ELECTRICAL img/thirdIND.jpg' alt='...' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Electrical Engineering
+              a.btn.btn-primary.get-btn-master(href='Electrical') Tap to View Details
+        // course item
+        .col-lg-4.col-md-6.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/ECE img/thirdIND.jpg' alt='...' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong Electronics Engineering
+              a.btn.btn-primary.get-btn-master(href='Electronics') Tap to View Details
+        // course item
+        .col-lg-4.col-md-6.course-item.wow.fadeInLeft.animated(style='visibility: visible; animation-name: fadeInLeft;')
+          .card.boxcard
+            img.card-img-top(src='../static/ALL IMAGE/APPLY section/index_course6.jpg' alt='...' height='190px')
+            .card-body
+              h5.card-title(style='color: #000000;')
+                strong More Courses Will Be Added Soon
+            //-   a.btn.btn-primary.get-btn-master(href='admission.html') Tap to View Details
